@@ -109,10 +109,11 @@ if __name__=="__main__":
     ############################
     folder = "src/batch_10_1"
     ############################
-    files = os.listdir(folder)
+    # files = os.listdir(folder)
+    files = ["test_batch_0.json"]
     for file in files:
         file_path = os.path.join(folder, file)
-        folder_name = os.path.join(folder, f"videos_{file}")
+        folder_name = os.path.join(folder, f"test_videos_{file}")
         os.makedirs(folder_name, exist_ok=True)
         
         with open(file_path, 'r') as f:
