@@ -33,7 +33,6 @@ class SimpleCNN(nn.Module):
         x = self.fc2(x)             
         return x
 
-# Example usage
 if __name__ == '__main__':
    
     input_height, input_width = 28, 28  
