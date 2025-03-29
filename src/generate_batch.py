@@ -5,8 +5,10 @@ from datetime import datetime
 
 # data
 ASL_classes = pd.read_json("MS-ASL/MSASL_classes.json").squeeze()
+######### Change whether train/test #########
 with open("MS-ASL/MSASL_test.json") as f:
     ASL_training_sets = json.load(f)
+#############################################
 
 #####################
 batch_class_size = 10 # the number of classes for each batch
@@ -39,7 +41,9 @@ for batch_idx in range(batch_number):
     }
     
     # store batch_{batch_idx}
+    ######### Change whether train/test #########
     out_path = f"{folder_name}/test_batch_{batch['batch_index']}.json"
+    #############################################
     with open(out_path, "w") as f:
         json.dump(batch, f, indent=2)
     print(f"Saved batch {batch['batch_index']} to {out_path}")
