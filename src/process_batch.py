@@ -194,10 +194,10 @@ def collect_videos(batch_data, batch_classes, output_path):
 
 if __name__=="__main__":
     ############################
-    folder = "src/batch_10_1"
-    ############################
+    folder = "src/batch_10_5"
     # files = os.listdir(folder)
-    files = ["test_batch_0.json"]
+    files = ["test_batch_4.json"]
+    ############################
     for file in files:
         file_path = os.path.join(folder, file)
         folder_name = os.path.join(folder, f"videos_{file}")
