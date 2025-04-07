@@ -1,5 +1,2 @@
-
-/videos
-/frames
-frames.zip
 .DS_Store
+data/processed/testing_videos_non_masked
