@@ -8,7 +8,7 @@ import random
 import matplotlib.pyplot as plt
 
 # Import dataset and dataloader directly from Image_to_tensor.py
-from Image_to_tensor import dataset, my_collate_fn
+from source_codes.Image_to_tensor import dataset, my_collate_fn
 from torch.utils.data import DataLoader, random_split
 
 class CNNEncoder(nn.Module):
