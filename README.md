@@ -1,7 +1,9 @@
 # ASL Detection Using CNN
 ## Project Description
+Preprocess the ASL dataset with SAM2 in combination with MediaPipe and classify with customly trained CNN-RNN pipeline.
 
-ECE324 Project
+Final report in NeurIPS Paper format: ASL_Detection_Report.pdf
+## ECE324 Project
 -----
 ## Directory structure
 NOTE: followed CCDS suggested file structure
